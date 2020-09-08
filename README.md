@@ -12,8 +12,16 @@ ___
 
 #### 3 TensorRT Quantization
 ##### 3.1 what is TensorRT?
+TensorRT is an inference frame(engine) that can accelerate model. TensorRT belongs to nvidia, so you must use CUDA and nvidia card. If you don't use GPU to infer you can use openvino provided by Intel.
 
 ##### 3.2 what is TensorRT doing?
+* Quantization
+Exchange fp32 model to fp16 or int8 to speed up model.
+*  Architecture Optimization
+**Prune model automatically and dicard neurons that are not important.**
+**Merge Conv2D, BN and ReLU together.**
+**Merge same shape layers.**
+**Do not use concat layer rather than feed the inputs into next layer directly.**
 
 ##### 3.3 How to use TensorRT?
 * Environment
