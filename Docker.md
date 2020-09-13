@@ -62,7 +62,56 @@ ___
 2.[Docker Commands](techi)
 
 ```shell
+# 1.pull image
+docker pull container:tag
 
+# 2.run image
+docker run -p host_post:container_post image_id
+
+# 3.mount file
+docker run -v host_dir:container_dir image_id
+
+# 4.start container
+docker start container_id
+
+# 5.restart container
+docker restart container_id
+
+# 6.stop container
+docker stop container_id
+
+# 7.kill container
+docker kill container_id
+
+# 8.check images
+docker images
+
+# 9.check containers
+docker ps -a
+
+# 10.docker network
+docker network ls
+ubuntu@VM-0-9-ubuntu:~$ sudo docker network ls
+NETWORK ID          NAME                DRIVER              SCOPE
+cd8e0ad56dcf        bridge              bridge              local
+f9551c25f825        host                host                local
+9677b5798b60        none                null                local
+
+docker network create
+
+# 11.save images
+# you can make your own images and save it, then send it to your homie.
+docker save -o output_path image_id
+
+# 12.load images
+# your homie receives images made by you and load it.
+docker load -i file_path
+
+# 13.commit your image
+docker commit -a author_name -m some_messages container_id new_image:tag
+
+# 14.push your image to docker hub
+docker push image_id
 ```
 
 
