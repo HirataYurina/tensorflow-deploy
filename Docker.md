@@ -1,16 +1,33 @@
-# Docker
+# Docker and Deep Learning Project
 
 > *Use docker to deploy your projects.*
+>
+> *In Deep Learning project, configure environment like CUDA, CUDNN and TensorRT are very tedious. So, docker is a good weapon you can use in working.*
 
 #### what is docker?
+
+Docker is a container engine that can separate containers and devoid environment conflict.
+
+Docker can devoid system incompatibility.
+
+The delivery of your project should be docker image currently.
 
 ___
 
 #### The advantages of docker
 
+1. Fast delivery and deployment: we don't need complicated deployment files and we only need a docker image.
+2. Highly efficient delivery and deployment.
+3. Highly efficient resource utilization rate.
+4. Better upgrade and extension: docker containers can communicate each other and share configuration files.
+
 ___
 
 #### Docker VS Virtual Machine
+
+1. Starting speed of docker is faster than staring speed of virtual machine.
+2. The weight of docker is smaller than virtual machine because docker can use your host kernel but virtual machine needs to simulate a whole system.
+3. If you only have a 1core and 2GB server,  you can deploy a little virtual machine. But you can deploy a lot of dockers.
 
 ___
 
